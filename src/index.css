@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.slick-slide > div{
+    margin: 0 10px;
+    item: center;
+}
+.slick-arrow::before {
+    color: blue !important;
+  }

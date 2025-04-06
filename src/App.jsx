@@ -14,7 +14,8 @@ import Program from "./Pages/Program";
 const App = () => {
   return (
     <div>
-      <Navbar />
+        <Navbar/>
+   
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/programs" element={<Program />} />
       </Routes>
       <Footer />
+    
     </div>
   );
 };

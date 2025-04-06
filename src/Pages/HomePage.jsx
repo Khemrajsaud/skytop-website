@@ -1,101 +1,111 @@
-// import 'react'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import image from "../assets/Image/team.png";
+import image1 from "../assets/Image/bhim.jpeg"
 
-// import { MdAdd } from "react-icons/md";
-// import { RiSubtractLine } from "react-icons/ri";
-// import { useState } from 'react';
-
-
-
-// const HomePage = () => {
-//   const [toggle ,setToggle] = useState(false)
-//   return (
-//     <>
-   
-
-//   <div className=' '>
-//     <div onClick={()=> setToggle(!toggle)} className='flex items-center'>
-//       <h1 >BIlling Information </h1>
-//       {toggle ?<RiSubtractLine/>  : <MdAdd/>}
-      
-//     </div>
-//     <div className={`${toggle ? "" : "hidden"}`}>
-//       <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe</h1>
-
-//     </div>
-
-//   </div>
-//   </>
-//   )
-// }
-
-// export default HomePage
-
-import { useState } from "react";
-import { MdAdd, MdRemove } from "react-icons/md";
- import { FaLightbulb, FaUserShield } from "react-icons/fa";
- import { MdStars } from "react-icons/md";
- import { GiPodium } from "react-icons/gi";
-
-const factors = [
+const teamMembers = [
   {
-    icon: FaLightbulb,
-    title: "Empowerment",
-    content:
-      "We foster a culture of encouragement and support to help our students achieve their goals.",
+    name: "Bhim Baduhar Saud",
+    role: "Co Founder",
+    image: image1,
+    read: "read more",
   },
   {
-    icon: FaUserShield,
-    title: "Innovation",
-    content:
-      "Our courses are designed to inspire creativity and new ideas in a dynamic learning environment.",
-  },
-  { 
-    icon: MdStars,
-    title: "Quality",
-    content:
-      "We are committed to providing the highest standard of education and resources for our students.",
+    name: "Jennie Roberts",
+    role: "Partner",
+    image: image,
+    read: "read more",
   },
   {
-    icon: GiPodium,
-    title: "Respect",
-    content:
-      "We embrace diversity and promote an inclusive environment where everyone is valued.",
+    name: "Mila Parker",
+    role: "Partner",
+    image: image,
+    read: "read more",
+  },
+  {
+    name: "Monica Pouli",
+    role: "Creative Leader",
+    image: image,
+    read: "read more",
+  },
+  {
+    name: "Mila Parker",
+    role: "Partner",
+    image: image,
+    read: "read more",
+  },
+  {
+    name: "Monica Pouli",
+    role: "Creative Leader",
+    image: image,
+    read: "read more",
   },
 ];
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
-const CollapsibleSections = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleSection = (index) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
+const HomePage = () => {
   return (
-    <div className=" mt-10 space-y-4">
-      {factors.map((factor, index) => (
-        <div
-          key={index}
-          className="bg-gray-200 p-4 rounded-lg cursor-pointer"
-          onClick={() => toggleSection(index)}
-        >
-          <div className="flex justify-between items-center">
-        
-            <h2 className="text-lg font-semibold">{factor.icon}{factor.title}</h2>
-            {openIndex === index ? (
-              <MdRemove className="text-xl" />
-            ) : (
-              <MdAdd className="text-xl" />
-            )}
-          </div>
-          {openIndex === index && (
-            <p className="mt-2 text-gray-700">{factor.content}</p>
-            
-          )}
+    <>
+      <div className="pt-6 mb-20 ">
+        <h1 className="text text-3xl font-bold text-center">
+          Meet Our Members
+        </h1>
+
+        <div className="w-3/4 m-auto mt-5 ">
+          <Slider {...settings}>
+            {teamMembers.map((item, index) => (
+              <div className=" bg-white rounded shadow py-3 px-2   " key={index}>
+                <img
+                  className="w-[150px] m-auto rounded-full"
+                  src={item.image}
+                  alt=""
+                />
+                <p className="text-center">{item.name}</p>
+                <p className="text-center">{item.role}</p>
+                <p className="bg-sky-500 py-1 px-3 text-center rounded text-white">
+                  {item.read}
+                </p>
+              </div>
+            ))}
+          </Slider>
         </div>
-      ))}
-    </div>
+      </div>
+    </>
   );
 };
 
-export default CollapsibleSections;
-
+export default HomePage;

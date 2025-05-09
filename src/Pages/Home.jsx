@@ -1,5 +1,5 @@
 
-import landing1 from "../assets/Image/landing3.png";
+// import landing1 from "../assets/Image/landing3.png";
 import HomePage from "./HomePage";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -38,11 +38,11 @@ const Home = () => {
     <div className="lg:mt-[140px] mt-[150px] w-full">
      
       <div className="w-full m-auto ">
-        <img 
+        {/* <img 
           src={landing1} 
           alt="Skytop Academy" 
           className="w-full  " 
-        />
+        /> */}
         <About/>
         <HomePage/>
         <div className="w-full m-auto ">

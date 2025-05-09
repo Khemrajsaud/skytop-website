@@ -33,7 +33,7 @@ const objectives = [
 
 const About = () => {
   return (
-    <div className="lg:mt-[140px] mt-[150px]">
+    <div className="mt-[100px]">
     <div className=" py-16 px-6 md:px-16 ">
       
 
@@ -47,7 +47,7 @@ const About = () => {
           <img src={aboutpage} alt="About" className="rounded-xl shadow-lg" />
         </motion.div>
         <motion.p
-          className="text-gray-700 text-lg text-justify"
+          className="text-gray-700 text-lg lg:text-justify"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -62,7 +62,7 @@ const About = () => {
       </div>
 
       {/* Mission & Vision */}
-      <div className="mt-16 text-center">
+      {/* <div className="mt-16 text-center">
         <motion.h3
           className="text-4xl font-bold text-gray-900 py-4 px-8    transition-all duration-300"
           initial={{ opacity: 0, y: -50 }}
@@ -71,7 +71,7 @@ const About = () => {
         >
           Our Mission & Vision
         </motion.h3>
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
         <motion.div
@@ -79,7 +79,7 @@ const About = () => {
           whileHover={{ scale: 1.05 }}
         >
           <h1 className="text-2xl font-bold">Our Mission</h1>
-          <p className="text-justify pt-4">
+          <p className="text-balance pt-4">
             Skytop Academy is dedicated to delivering high-quality,
             industry-relevant education through innovative teaching
             methodologies, personalized learning, and state-of-the-art
@@ -92,7 +92,7 @@ const About = () => {
           whileHover={{ scale: 1.05 }}
         >
           <h1 className="text-2xl font-bold">Our Vision</h1>
-          <p className="text-justify pt-4">
+          <p className="text-balance pt-4">
             To be a leading educational institution that empowers individuals
             with knowledge, skills, and innovation, enabling them to excel in an
             ever-evolving world.
@@ -103,7 +103,7 @@ const About = () => {
       {/* Strengths Section */}
       <div className="flex justify-center mt-16">
         <motion.h1
-          className="text-4xl font-bold text-gray-900 py-4 px-8  transition-all duration-300"
+          className="lg:text-4xl text-3xl font-bold text-gray-900 py-4 px-8  transition-all duration-300"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

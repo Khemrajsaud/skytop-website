@@ -11,7 +11,7 @@ import { FaTimes } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import skytop from "../assets/Image/skytop log.png";
 
@@ -25,6 +25,8 @@ const navLinks = [
 ];
 
 const Navbar = () => {
+  const location = useLocation();
+  const isContactPage = location.pathname === "/contacts";
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -96,7 +98,11 @@ const Navbar = () => {
               <Link key={index }
               to={item.path}
               onClick={()=>setIsOpen(false)}
-              className="bg-sky-300 px-1 py-1"
+              className={`hover:text-blue-500 ${isContactPage} ${
+                location.pathname === item.path
+                  ? "bg-blue-600 text-white rounded px-2 py-1 font-bold inline-block"
+                  : ""
+              }`}
               >
                 {item.name}
               

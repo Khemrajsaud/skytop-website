@@ -35,7 +35,7 @@ const Home = () => {
     cssEase: "linear"
   };
   return (
-    <div className="lg:mt-[140px] mt-[150px] w-full">
+    <div className="lg:mt-[60px] mt-[60px] w-full">
      
       <div className="w-full m-auto ">
         {/* <img 
@@ -45,7 +45,7 @@ const Home = () => {
         /> */}
         <About/>
         <HomePage/>
-        <div className="w-full m-auto ">
+        <div className="w-full mt-[50px] m-auto mb-5 ">
           <h1 className="text-3xl font-bold text-center pb-6">Industrial Partners</h1>
           <div className="pb-6">
           <Slider {...settings}>

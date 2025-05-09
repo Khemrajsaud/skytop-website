@@ -76,10 +76,10 @@ const Contact = () => {
         <h3 className="text-lg font-semibold text-gray-700">Get in Touch</h3>
         <div className="mt-3 space-y-2">
           <p className="flex items-center justify-center gap-2 text-gray-600">
-            <FaPhone /> +123 456 7890
+            <FaPhone /> 9865616815
           </p>
           <p className="flex items-center justify-center gap-2 text-gray-600">
-            <FaWhatsapp /> +987 654 3210
+            <FaWhatsapp /> 9865616815
           </p>
           <p className="flex items-center justify-center gap-2 text-gray-600">
             <FaEnvelope /> contact@example.com

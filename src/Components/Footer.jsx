@@ -63,9 +63,12 @@ const Footer = () => {
             &copy; 2024 Skytop, Inc. &bull; Privacy &bull; Terms &bull; Sitemap
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
+
             <FaTwitter className="text-gray-600 hover:text-blue-500 cursor-pointer text-lg" />
-            <FaFacebookF className="text-gray-600 hover:text-blue-500 cursor-pointer text-lg" />
-            <FaLinkedinIn className="text-gray-600 hover:text-blue-500 cursor-pointer text-lg" />
+            <a href="https://www.facebook.com/profile.php?id=61558281991316" className="">
+            <FaFacebookF className="text-gray-600 hover:text-blue-500 cursor-pointer text-lg" /></a>
+            <a href="https://www.linkedin.com/company/skytop-academy/posts/?feedView=all" className="">
+            <FaLinkedinIn className="text-gray-600 hover:text-blue-500 cursor-pointer text-lg" /></a>
             <FaYoutube className="text-gray-600 hover:text-red-500 cursor-pointer text-lg" />
           </div>
         </div>

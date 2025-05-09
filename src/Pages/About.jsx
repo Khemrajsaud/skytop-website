@@ -33,7 +33,7 @@ const objectives = [
 
 const About = () => {
   return (
-    <div className="mt-[100px]">
+    <div className="">
     <div className=" py-16 px-6 md:px-16 ">
       
 

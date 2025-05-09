@@ -35,21 +35,21 @@ const Navbar = () => {
       <div className="bg-blue-500 text-white px-4 flex flex-col md:flex-row md:justify-between items-center text-center md:text-left">
         <div className="lg:flex items-center flex gap-2 mt-3">
           <FaPhoneAlt />
-          <span>01-24637466 </span>
-        <IoLogoWhatsapp/>
-        <span>01-326374962762</span>
+          <span>9865616815 </span>
+        <IoLogoWhatsapp className="text-[#c7c1f1]"/>
+        <span>9865616815</span>
         </div>
       
 
 
         <div className="flex items-center lg:gap-3  lg:p-2 ">
-          <a href="#" className="">
+          <a href="https://www.facebook.com/profile.php?id=61558281991316" className="">
             <FaFacebookF className="  p-2 text-4xl" />
           </a>
           <a href="#" className="">
             <FaXTwitter className=" p-2 text-4xl" />
           </a>
-          <a href="#" className="">
+          <a href="https://www.linkedin.com/company/skytop-academy/posts/?feedView=all" className="">
             <FaLinkedinIn className=" p-2 text-4xl" />
           </a>
           <a href="#" className="">

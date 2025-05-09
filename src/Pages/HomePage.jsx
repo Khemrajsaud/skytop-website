@@ -3,6 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import image from "../assets/Image/team.png";
 import image1 from "../assets/Image/bhim.jpeg"
+import karuna from '../assets/Image/karunaa.png'
 
 const teamMembers = [
   {
@@ -13,9 +14,9 @@ const teamMembers = [
   },
 
   {
-    name: "Jennie Roberts",
-    role: "Partner",
-    image: image,
+    name: "Ms.Karuna Upreti",
+    role: "Public Relation Officer",
+    image: karuna,
     read: "read more",
   },
 
@@ -83,7 +84,7 @@ const settings = {
 const HomePage = () => {
   return (
     <>
-      <div className="mt-[145px] ">
+      <div className=" ">
         <h1 className="text text-3xl font-bold text-center">
           Meet Our Members
         </h1>

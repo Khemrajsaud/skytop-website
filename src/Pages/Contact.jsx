@@ -6,8 +6,9 @@ import { Alert } from "@material-tailwind/react";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-10 ">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 pt-[150px] ">
       {/* Image Section */}
+      <div className="lg:flex lg:items-center">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -65,6 +66,7 @@ const Contact = () => {
           <Alert color="green">A success alert for showing message.</Alert>
         </form>
       </motion.div>
+      </div>
 
       {/* Contact Info */}
       <motion.div

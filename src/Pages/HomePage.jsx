@@ -11,12 +11,14 @@ const teamMembers = [
     image: image1,
     read: "read more",
   },
+
   {
     name: "Jennie Roberts",
     role: "Partner",
     image: image,
     read: "read more",
   },
+
   {
     name: "Mila Parker",
     role: "Partner",
@@ -41,6 +43,7 @@ const teamMembers = [
     image: image,
     read: "read more",
   },
+
 ];
 const settings = {
   dots: false,
@@ -80,7 +83,7 @@ const settings = {
 const HomePage = () => {
   return (
     <>
-      <div className="pt-6 mb-20 ">
+      <div className="mt-[145px] ">
         <h1 className="text text-3xl font-bold text-center">
           Meet Our Members
         </h1>
@@ -90,7 +93,7 @@ const HomePage = () => {
             {teamMembers.map((item, index) => (
               <div className=" bg-white rounded shadow py-3 px-2   " key={index}>
                 <img
-                  className="w-[150px] m-auto rounded-full"
+                  className="w-[150px] m-auto rounded-full object-cover "
                   src={item.image}
                   alt=""
                 />

@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import partners0 from "../assets/Image/partners.jpeg"
 import partners1 from "../assets/Image/partners1.jpeg"
 import partners2 from "../assets/Image/partners2.jpeg"
+import About from "./About";
 
 
 const Home = () => {
@@ -34,14 +35,15 @@ const Home = () => {
     cssEase: "linear"
   };
   return (
-    <div className="">
+    <div className="lg:mt-[140px] mt-[150px] w-full">
      
-      <div className="w-full m-auto">
+      <div className="w-full m-auto ">
         <img 
           src={landing1} 
           alt="Skytop Academy" 
           className="w-full  " 
         />
+        <About/>
         <HomePage/>
         <div className="w-full m-auto ">
           <h1 className="text-3xl font-bold text-center pb-6">Industrial Partners</h1>
